@@ -1,0 +1,277 @@
+
+/* NAVBAR STYLES */
+.top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #1e2329; /* Matches container */
+    border-bottom: 1px solid #2b3139;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: bold;
+    color: #fcd535; /* Gold Brand */
+    font-size: 1.1rem;
+}
+
+.portfolio-link {
+    text-decoration: none;
+    color: #848e9c;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.portfolio-link:hover {
+    color: #eaecef;
+}
+
+/* Adjust body padding so nav doesn't overlap centered card */
+body {
+    padding-top: 80px; 
+}
+
+/* GLOBAL RESET & FONTS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #181a20; /* Deep Exchange Background */
+    color: #eaecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* MAIN CARD CONTAINER */
+.main-container {
+    background-color: #2b3139; /* Card Color */
+    width: 100%;
+    max-width: 450px;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER */
+.header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #eaecef;
+}
+
+/* LONG/SHORT TOGGLE */
+.mode-toggle-container {
+    display: flex;
+    background-color: #1e2329;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.mode-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: #848e9c;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Active States for Toggle */
+.mode-btn.active-long {
+    background-color: #2b3139; /* Active Tab Background */
+    color: #0ecb81; /* Binance Green */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.mode-btn.active-short {
+    background-color: #2b3139;
+    color: #f6465d; /* Binance Red */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* INPUTS & FORM */
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For unit overlay */
+}
+
+label {
+    font-size: 0.85rem;
+    color: #848e9c;
+    margin-bottom: 6px;
+}
+
+input {
+    background-color: #1e2329;
+    border: 1px solid #474d57;
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: #eaecef;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #fcd535; /* Focus Gold */
+}
+
+/* Unit Overlays (USDT, %) */
+.unit-overlay {
+    position: absolute;
+    right: 12px;
+    top: 32px; /* Adjust based on label height + padding */
+    color: #848e9c;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+/* LEVERAGE BUTTONS */
+.leverage-group {
+    margin-bottom: 8px;
+}
+
+.leverage-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.lev-btn {
+    flex: 1;
+    background-color: #1e2329;
+    border: 1px solid #474d57;
+    color: #848e9c;
+    padding: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.lev-btn:hover {
+    background-color: #474d57;
+}
+
+.lev-btn.active {
+    background-color: #474d57;
+    color: #fcd535; /* Active Gold Text */
+    border-color: #fcd535;
+}
+
+.custom-leverage {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-leverage input {
+    width: 100%;
+}
+
+.custom-leverage .unit {
+    position: absolute;
+    right: 12px;
+    color: #848e9c;
+}
+
+/* ACTION BUTTON */
+.calculate-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fcd535; /* Binance Gold */
+    color: #181a20; /* Dark Text on Gold */
+    transition: background-color 0.2s;
+}
+
+.calculate-btn:hover {
+    background-color: #eebb00;
+}
+
+/* RESULTS DASHBOARD */
+.results-card {
+    margin-top: 24px;
+    background-color: #1e2329;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #474d57;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.result-row span:first-child {
+    color: #848e9c;
+    font-size: 0.9rem;
+}
+
+.result-row.highlight span.value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eaecef; /* Default White */
+}
+
+/* Specific Colors for PNL Logic (Applied via JS later) */
+.text-green { color: #0ecb81 !important; }
+.text-red { color: #f6465d !important; }
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #474d57;
+    margin: 12px 0;
+}
+
+.result-row.compact {
+    margin-bottom: 8px;
+}
+
+.result-row.compact span {
+    font-size: 0.9rem;
+}

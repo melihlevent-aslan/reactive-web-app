@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Trade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-content">
+            <span class="brand">My Tools</span>
+            <a href="https://melihlevent-aslan.github.io/" target="_blank" class="portfolio-link">
+                ← Me
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <header class="header">
+            <h1>PNL & ROI Calculator</h1>
+        </header>
+
+        <div class="mode-toggle-container">
+            <button id="btn-long" class="mode-btn active-long">Long</button>
+            <button id="btn-short" class="mode-btn">Short</button>
+        </div>
+
+        <div class="calculator-form">
+            
+            <div class="input-group leverage-group">
+                <label>Leverage</label>
+                <div class="leverage-buttons">
+                    <button class="lev-btn" data-value="5">5x</button>
+                    <button class="lev-btn" data-value="10">10x</button>
+                    <button class="lev-btn" data-value="20">20x</button>
+                    <button class="lev-btn" data-value="50">50x</button>
+                    <button class="lev-btn" data-value="100">100x</button>
+                </div>
+                <div class="custom-leverage">
+                    <input type="number" id="leverage-input" placeholder="Custom" value="10">
+                    <span class="unit">x</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Investment</label>
+                    <input type="number" id="investment" placeholder="1000">
+                    <span class="unit-overlay">USDT</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Entry Price</label>
+                    <input type="number" id="entry-price" placeholder="50000">
+                </div>
+                <div class="input-group" style="flex: 0.8;">
+                    <label>Target Move</label>
+                    <input type="number" id="target-percent" placeholder="1">
+                    <span class="unit-overlay">%</span>
+                </div>
+                <div class="input-group" style="flex: 1.2;">
+                    <label>Exit Price</label>
+                    <input type="number" id="exit-price" placeholder="50500">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Maker Fee</label>
+                    <input type="number" id="maker-fee" value="0.02" step="0.01">
+                    <span class="unit-overlay">%</span>
+                </div>
+                <div class="input-group">
+                    <label>Taker Fee</label>
+                    <input type="number" id="taker-fee" value="0.04" step="0.01">
+                    <span class="unit-overlay">%</span>
+                </div>
+            </div>
+            
+            <button id="calculate-btn" class="calculate-btn">Calculate PNL</button>
+        </div>
+
+        <div class="results-card">
+            <div class="result-row highlight">
+                <span>Net PNL</span>
+                <span id="result-pnl" class="value">--</span>
+            </div>
+            <div class="result-row highlight">
+                <span>ROI</span>
+                <span id="result-roi" class="value">--</span>
+            </div>
+            <hr class="divider">
+            <div class="result-row compact">
+                <span>Final Balance</span>
+                <span id="result-balance">--</span>
+            </div>
+            <div class="result-row compact">
+                <span>Total Fees</span>
+                <span id="result-fees">--</span>
+            </div>
+            <div class="result-row compact">
+                <span>Break-Even Price</span>
+                <span id="result-breakeven">--</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
