@@ -11,7 +11,7 @@
 |:---:|:---:|
 | <img src="image/example.png" alt="Input Logic" width="250"/> | <img src="image/levex.png" alt="Leverage Selector" width="250"/> |
 
-> *Live Demo: [Click here to view the Tool]([https:/github.com/melihlevent-aslan/reactive-web-app](https://melihlevent-aslan.github.io/reactive-web-app/))* 
+> *Live Demo: [Click here to view the Tool]((https://melihlevent-aslan.github.io/reactive-web-app/))* 
 
 ## Project Overview
 This project is a lightweight, high-performance web application designed for **real-time financial risk assessment**. It simulates the order management systems of professional digital asset exchanges, allowing users to calculate Profit/Loss (PNL), Return on Investment (ROI), and Break-Even thresholds with precision.
