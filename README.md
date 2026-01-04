@@ -9,7 +9,7 @@
 
 | Control Panel | Smart Leverage |
 |:---:|:---:|
-| <img src="example.png" alt="Input Logic" width="250"/> | <img src="levex.png" alt="Leverage Selector" width="250"/> |
+| <img src="image/example.png" alt="Input Logic" width="250"/> | <img src="image/levex.png" alt="Leverage Selector" width="250"/> |
 
 > *Live Demo: [Click here to view the Tool](https:/github.com/melihlevent-aslan/reactive-web-app)*
 
