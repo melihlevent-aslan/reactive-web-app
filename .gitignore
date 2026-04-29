@@ -1,0 +1,10 @@
+# Mission 1: Ignore a specific folder and everything inside it
+data/
+dataset/
+
+# Mission 2: Ignore all files of a specific type anywhere in the project
+*.png
+*.jpg
+
+# Mission 3: Ignore a specific file
+secret_passwords.txt
